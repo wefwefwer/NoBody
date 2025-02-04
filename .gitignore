@@ -1,16 +1,14 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+#include <stdio.h>
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
+void hello();
+int sum(int a, int b);
 
-# Book build output
-_book
+int main() {
+    hello();
+    int result = sum(5, 10);
+    printf("Sum: %d\n", result);
+    return 0;
+}
 
-# eBook build output
-*.epub
-*.mobi
-*.pdf
+void hello();
+int sum(int a, int b);
